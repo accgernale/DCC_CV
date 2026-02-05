@@ -126,7 +126,7 @@ class CalibrationCertificate(BaseModel):
     
     # Metadata
     extraction_timestamp: Optional[datetime] = Field(
-        default_factory=datetime.now,
+        default=None,
         description="When the data was extracted"
     )
     source_file: Optional[str] = Field(None, description="Source file path")
